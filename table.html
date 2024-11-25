@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<title>Таблица</title>
+</head>
+
+<body>
+    <h1 align="center"> <a href="C:/Users/terme/OneDrive/Рабочий стол/library/mainPage.html">Центральная библиотека им. А. Чехова</a> </h1>
+    <hr>
+    <p align="center"><b><font size="50"> <a href="C:/Users/terme/OneDrive/Рабочий стол/library/table.html">КАТАЛОГ</a> </font></b></p>
+    <hr>
+
+    <form>
+        <details>
+            <summary>График</summary>
+             <table>
+                <tr align="center">
+                    <td>
+                        <b>Значение по оси OX</b>
+                    </td>
+                    <td>
+                        <b>Результат</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="radio"  name="parameters" value="type">Дата выхода
+                    </td>
+                    <td>
+                        <input type="checkbox" name="results" value="0">Количество страниц
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="radio"  name="parameters" value="country">Жанр
+                    </td>
+                    <td>
+                        <input type="checkbox" name="results" value="1">Количество книг
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="radio"  name="parameters" value="seasons">Автор
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+             </table>
+             <p><input type="button" value="Построить"></p>
+          </details>
+    </form>
+    <form>
+        <details>
+            <summary>Фильтр</summary>
+            <p>
+                <label>Название книги: 
+                   <input type="text" name="name" id="nameBook">
+                </label>
+            </p>
+            <p>
+                <label>Дата выхода: 
+                    <input type="text" name="date" id="date1">
+                </label>
+            </p>
+            <p>
+                <label>Автор: 
+                    <input type="text" name="autor" id="autor1">
+                </label>
+            </p>
+            <p>
+                <label>Жанр
+                    <input type="text" name="genre" id="genre1">
+                </label>
+            </p>
+            <p>
+                <label> Количество страниц: от
+                    <input type="text" name="count" id="kolvo"> до
+                </label>
+                <label>
+                    <input type="text" name="count" id="kolvo1">
+                </label>
+            </p>
+            <p><input type="button" value="Найти"></p>
+        </details>
+    </form>
+    <form>
+        <details>
+            <summary>Сортировка</summary>
+            <p>
+                <label>Первый уровень:  
+                    <select id="sort1">
+                        <option value="0" selected> Нет </option>
+                        <option value="1"> Автор </option>
+                        <option value="2"> Жанр </option>
+                        <option value="3"> Год выпуска </option>
+                        <option value="4"> Количество страниц </option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="check" value="0">
+                </label>
+            </p>
+            <p>
+                <label>Второй уровень:  
+                    <select id="sort2">
+                        <option value="0" selected> Нет </option>
+                        <option value="1"> Автор </option>
+                        <option value="2"> Жанр </option>
+                        <option value="3"> Год выпуска </option>
+                        <option value="4"> Количество страниц </option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="check" value="0">
+                </label>
+            </p>
+            <p>
+                <label>Третий уровень:  
+                    <select id="sort3">
+                        <option value="0" selected> Нет </option>
+                        <option value="1"> Автор </option>
+                        <option value="2"> Жанр </option>
+                        <option value="3"> Год выпуска </option>
+                        <option value="4"> Количество страниц </option>
+                    </select>
+                </label>
+                <label>по убыванию?
+                    <input type="checkbox" name="check" value="0">
+                </label>
+            </p>
+            <p>
+                <input type="button" value="Сортировать">  
+            </p>
+        </details>
+    </form>
+    <hr>
+    <table border="1" cellspacing="0">
+        <tr align="center">
+            <th>№</th>
+            <th>Название</th>
+            <th>Автор</th>
+            <th>Жанр</th>
+            <th>Год выпуска</th>
+            <th>Кол-во страниц</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Мертвые души</td>
+            <td>Н.В. Гоголь</td>
+            <td>Поэма</td>
+            <td>1842</td>
+            <td>411</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Круть</td>
+            <td>Виктор Пелевин</td>
+            <td>Детектив</td>
+            <td>2024</td>
+            <td>334</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Матабар</td>
+            <td>Кирилл Клеванский</td>
+            <td>Фэнтези</td>
+            <td>2024</td>
+            <td>714</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Инсомния</td>
+            <td>Вова Бо</td>
+            <td>Фэнтези</td>
+            <td>2023</td>
+            <td>440</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>К востоку от Эдема</td>
+            <td>Джон Эрнст Стейнбек</td>
+            <td>Зарубежная классика</td>
+            <td>1952</td>
+            <td>820</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Сто лет одиночества</td>
+            <td>Габриэль Гарсиа Маркес</td>
+            <td>Зарубежная классика</td>
+            <td>1967</td>
+            <td>480</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Старик и море</td>
+            <td>Эрнест Миллер Хемингуэй</td>
+            <td>Зарубежная классика</td>
+            <td>1952</td>
+            <td>112</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Тихий Дон</td>
+            <td>М. А. Шолохов</td>
+            <td>Роман</td>
+            <td>1940</td>
+            <td>1810</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Гроздья гнева</td>
+            <td>Джон Эрнст Стейнбек</td>
+            <td>Заруюежная классика</td>
+            <td>1939</td>
+            <td>590</td>
+        </tr>
+        <tr>
+            <td>
+                10
+            </td>
+            <td>Игра в бисер</td>
+            <td>Герман Гессе</td>
+            <td>Фантастика</td>
+            <td>1943</td>
+            <td>640</td>
+        </tr>
+        <tr>
+            <td>
+                11
+            </td>
+            <td>Архипелаг ГУЛАГ</td>
+            <td>Александр Солженицын</td>
+            <td>Историческая литература</td>
+            <td>1975</td>
+            <td>2271</td>
+        </tr>
+        <tr>
+            <td>
+                12
+            </td>
+            <td>По ком звонит колокол</td>
+            <td>Эрнест Миллер Хемингуэй</td>
+            <td>Зарубежная классика</td>
+            <td>1940</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>
+                13
+            </td>
+            <td>Повелитель мух</td>
+            <td>Уильям Годинг</td>
+            <td>Зарубежная классика</td>
+            <td>1954</td>
+            <td>190</td>
+        </tr>
+        <tr>
+            <td>
+                14
+            </td>
+            <td>У войны не женское лицо</td>
+            <td>Светлана Алексиевич</td>
+            <td>Публицистика</td>
+            <td>1985</td>
+            <td>330</td>
+        </tr>
+        <tr>
+            <td>
+                15
+            </td>
+            <td>Посторонний</td>
+            <td>Альбер Камо</td>
+            <td>Зарубежная классика</td>
+            <td>1942</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>
+                16
+            </td>
+            <td>Сага о Форсайтах</td>
+            <td>Джон Голсуорси</td>
+            <td>Зарубежная классика</td>
+            <td>1906</td>
+            <td>1141</td>
+        </tr>
+        <tr>
+            <td>
+                17
+            </td>
+            <td>Вторая мировая война</td>
+            <td>Уинстон Черчилль</td>
+            <td>Публицистика</td>
+            <td>1953</td>
+            <td>3017</td>
+        </tr>
+        <tr>
+            <td>
+                18
+            </td>
+            <td>Любовь во время чумы</td>
+            <td>Габриэль Гарсиа Маркес</td>
+            <td>Зарубежная классика</td>
+            <td>1985</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>
+                19
+            </td>
+            <td>Будденброки</td>
+            <td>Томас Манн</td>
+            <td>Зарубежная классика</td>
+            <td>1901</td>
+            <td>830</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>1984</td>
+            <td>Джордж Оруэлл</td>
+            <td>Антиутопия</td>
+            <td>1949</td>
+            <td>328</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Мастер и Маргарита</td>
+            <td>Михаил Булгаков</td>
+            <td>Русская классика</td>
+            <td>1966</td>
+            <td>480</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Преступление и наказание</td>
+            <td>Фёдор Достоевский</td>
+            <td>Русская классика</td>
+            <td>1866</td>
+            <td>672</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Гордость и предубеждение</td>
+            <td>Джейн Остин</td>
+            <td>Зарубежная классика</td>
+            <td>1813</td>
+            <td>432</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Великий Гэтсби</td>
+            <td>Фрэнсис Скотт Фицджеральд</td>
+            <td>Зарубежная классика</td>
+            <td>1925</td>
+            <td>218</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Анна Каренина</td>
+            <td>Лев Толстой</td>
+            <td>Русская классика</td>
+            <td>1877</td>
+            <td>864</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Братья Карамазовы</td>
+            <td>Фёдор Достоевский</td>
+            <td>Русская классика</td>
+            <td>1880</td>
+            <td>824</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>О дивный новый мир</td>
+            <td>Олдос Хаксли</td>
+            <td>Антиутопия</td>
+            <td>1932</td>
+            <td>312</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Лолита</td>
+            <td>Владимир Набоков</td>
+            <td>Зарубежная классика</td>
+            <td>1955</td>
+            <td>336</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Улисс</td>
+            <td>Джеймс Джойс</td>
+            <td>Модернизм</td>
+            <td>1922</td>
+            <td>732</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Три товарища</td>
+            <td>Эрих Мария Ремарк</td>
+            <td>Зарубежная классика</td>
+            <td>1936</td>
+            <td>576</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Сто лет одиночества</td>
+            <td>Габриэль Гарсия Маркес</td>
+            <td>Магический реализм</td>
+            <td>1967</td>
+            <td>417</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Доктор Живаго</td>
+            <td>Борис Пастернак</td>
+            <td>Русская классика</td>
+            <td>1957</td>
+            <td>704</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>451 градус по Фаренгейту</td>
+            <td>Рэй Брэдбери</td>
+            <td>Антиутопия</td>
+            <td>1953</td>
+            <td>249</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Над пропастью во ржи</td>
+            <td>Джером Дэвид Сэлинджер</td>
+            <td>Зарубежная классика</td>
+            <td>1951</td>
+            <td>277</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Бойцовский клуб</td>
+            <td>Чак Паланик</td>
+            <td>Современная проза</td>
+            <td>1996</td>
+            <td>218</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Гарри Поттер и философский камень</td>
+            <td>Джоан Роулинг</td>
+            <td>Фэнтези</td>
+            <td>1997</td>
+            <td>320</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Сияние</td>
+            <td>Стивен Кинг</td>
+            <td>Хоррор</td>
+            <td>1977</td>
+            <td>447</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Вино из одуванчиков</td>
+            <td>Рэй Брэдбери</td>
+            <td>Современная проза</td>
+            <td>1957</td>
+            <td>256</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Маленький принц</td>
+            <td>Антуан де Сент-Экзюпери</td>
+            <td>Зарубежная классика</td>
+            <td>1943</td>
+            <td>96</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Дюна</td>
+            <td>Фрэнк Герберт</td>
+            <td>Фантастика</td>
+            <td>1965</td>
+            <td>412</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Пикник на обочине</td>
+            <td>Аркадий и Борис Стругацкие</td>
+            <td>Фантастика</td>
+            <td>1972</td>
+            <td>224</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Грозовой перевал</td>
+            <td>Эмили Бронте</td>
+            <td>Зарубежная классика</td>
+            <td>1847</td>
+            <td>416</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Моби Дик</td>
+            <td>Герман Мелвилл</td>
+            <td>Зарубежная классика</td>
+            <td>1851</td>
+            <td>585</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Граф Монте-Кристо</td>
+            <td>Александр Дюма</td>
+            <td>Зарубежная классика</td>
+            <td>1844</td>
+            <td>1312</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Цветы для Элджернона</td>
+            <td>Дэниел Киз</td>
+            <td>Научная фантастика</td>
+            <td>1966</td>
+            <td>311</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Жажда жизни</td>
+            <td>Ирвинг Стоун</td>
+            <td>Биографический роман</td>
+            <td>1934</td>
+            <td>736</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Ловец в хлебном поле</td>
+            <td>Джером Дэвид Сэлинджер</td>
+            <td>Зарубежная классика</td>
+            <td>1951</td>
+            <td>277</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Зов Ктулху</td>
+            <td>Говард Лавкрафт</td>
+            <td>Хоррор</td>
+            <td>1928</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Маленькие женщины</td>
+            <td>Луиза Мэй Олкотт</td>
+            <td>Зарубежная классика</td>
+            <td>1868</td>
+            <td>759</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Мифы Древней Греции</td>
+            <td>Роберт Грейвс</td>
+            <td>Мифология</td>
+            <td>1955</td>
+            <td>384</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
